@@ -83,7 +83,7 @@ const Products = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full pt-10 sm:pt-12 md:pt-16 lg:pt-20">
         <div className="w-full order-2 sm:order-1">
           <Image
-            src="/Web-Images/product/products-2.png"
+            src="/Web-Images/product/product-1.png"
             alt="products-1"
             width={400}
             height={300}
@@ -92,7 +92,7 @@ const Products = () => {
         </div>
         <div className="w-full order-1 sm:order-2">
           <Image
-            src="/Web-Images/product/product-1.png"
+            src="/Web-Images/product/products-2.png"
             alt="products-2"
             width={400}
             height={300}
