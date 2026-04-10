@@ -21,6 +21,20 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  // Yeh function add karo Navbar component ke andar (useEffect se pehle)
+  const handleContactClick = (e, link) => {
+    if (link === "/#contact") {
+      e.preventDefault();
+      setIsOpen(false);
+      const el = document.getElementById("contact");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.location.href = "/#contact";
+      }
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -57,6 +71,7 @@ const Navbar = () => {
                 <Link
                   key={item.link}
                   href={item.link}
+                  onClick={(e) => handleContactClick(e, item.link)}
                   className={`font-garnett text-[18px] pb-0 transition-colors relative group cursor-pointer ${
                     pathname === item.link
                       ? "text-[#FFFFFF]"
@@ -89,7 +104,7 @@ const Navbar = () => {
               <Link
                 key={item.link}
                 href={item.link}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleContactClick(e, item.link)}
                 className={`font-garnett text-[20px] relative group ${
                   pathname === item.link
                     ? "text-[#FFFFFF]"
