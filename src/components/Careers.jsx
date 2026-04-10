@@ -71,9 +71,6 @@ const Careers = () => {
         <p className="reveal delay-13 font-roboto font-bold text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-[#AE0000] text-center mb-5">
           Sales & Marketing Manager
         </p>
-        <p className="reveal delay-14 font-roboto font-bold text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-[#AE0000] text-center mb-5">
-          Human Resources Officer
-        </p>
         <p className="reveal delay-15 font-roboto font-bold text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-[#AE0000] text-center">
           Communications Officer (Corporate & Marketing)
         </p>

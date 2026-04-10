@@ -42,7 +42,6 @@
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  /* Garnett */
   --font-garnett-regular:  "Garnett-Regular",  sans-serif;
   --font-garnett-light:    "Garnett-Light",    sans-serif;
   --font-garnett-medium:   "Garnett-Medium",   sans-serif;
@@ -53,7 +52,6 @@
 
 /* ===== UTILITY CLASSES ===== */
 
-/* Garnett classes */
 .font-garnett-regular  { font-family: var(--font-garnett-regular); }
 .font-garnett-light    { font-family: var(--font-garnett-light); }
 .font-garnett-medium   { font-family: var(--font-garnett-medium); }
