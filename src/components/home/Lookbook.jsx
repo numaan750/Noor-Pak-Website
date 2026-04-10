@@ -1,125 +1,129 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Lookbook = () => {
   return (
-    <div className="text-center Mycontainer pt-10 sm:pt-12 md:pt-16 lg:pt-20 pb-10 sm:pb-12 md:pb-16 lg:pb-20">
-      <h2 className="text-[28px] md:text-[32px] font-bold text-[#000000] mb-5">
-        Lookbook
-      </h2>
-      <p className="text-[16px] md:text-[18px] text-[#000000] leading-relaxed mb-5 text-center">
-        Browse our Lookbook to see photos from across Norpak, including an
-        opportunity to meet some of our staff, see how our products are made and
-        explore our extensive range of handmade products made from more
-        sustainable materials.
-      </p>
-      <p className="text-[16px] md:text-[18px] text-[#000000] leading-relaxed mb-5 text-center">
-        You even get a chance to take a look at LAMS school, and meet students
-        and teachers there.
-      </p>
-      <p className="text-[16px] md:text-[18px] text-[#000000] leading-relaxed text-center">
-        It's all right here, in the Norpak Lookbook.
-      </p>
+    <section className="bg-[#EBEBEB]">
+      <div className="text-center Mycontainer pt-10 sm:pt-12 md:pt-16 lg:pt-25 pb-10 sm:pb-12 md:pb-16 lg:pb-25">
+        <h2 className="reveal font-garnett-medium font-bold text-[18px] md:text-[39px] mb-5 tracking-tighter leading-[43px]">
+          Lookbook
+        </h2>
+        <p className="reveal delay-1 font-garnett text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-center max-w-full mb-5">
+          Browse our Lookbook to see photos from across Norpak, including an
+          opportunity to meet some of our staff, see how our products are made
+          and explore our extensive range of handmade products made from more
+          sustainable materials.
+        </p>
+        <p className="reveal delay-2 font-garnett text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-center max-w-full mb-5">
+          You even get a chance to take a look at LAMS school, and meet students
+          and teachers there.
+        </p>
+        <p className="reveal delay-3 font-garnett text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-center max-w-full mb-5">
+          It's all right here, in the Norpak Lookbook.
+        </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 shrink-0 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
-        <div className="flex flex-col gap-4">
-          <div className="overflow-hidden h-[550px]">
+        <div className="flex justify-center">
+          <Link href="/lookbook">
+            <button className="reveal delay-4 font-roboto font-medium bg-[#000000] hover:bg-gray-700 text-white tracking-wide uppercase leading-[13px] text-[10px] md:text-[13px] px-6 py-2.5 transition-colors duration-200 cursor-pointer">
+              View
+            </button>
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-30 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+          <div className="reveal overflow-hidden h-[385px]">
             <Image
-              src="/Web-Images/home/lookbook/lookbook-1.png"
+              src="/Web-Images/home/lookbook/lokbook-1.png"
               alt="Norpak product handmade"
               width={400}
-              height={550}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
+              height={400}
+              className="w-full h-full object-contain"
             />
           </div>
-          <div className="overflow-hidden h-[550px]">
+
+          <div className="reveal overflow-hidden h-[380px]">
             <Image
-              src="/Web-Images/home/lookbook/lookbook-2.png"
-              alt="Norpak staff member"
-              width={400}
-              height={550}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
-            />
-          </div>
-          <div className="overflow-hidden h-[625px]">
-            <Image
-              src="/Web-Images/home/lookbook/lookbook-3.png"
-              alt="Sustainable materials"
-              width={400}
-              height={640}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <div className="overflow-hidden h-[360px]">
-            <Image
-              src="/Web-Images/home/lookbook/lookbook-4.png"
+              src="/Web-Images/home/lookbook/lokbook-2.png"
               alt="Product making process"
               width={400}
-              height={360}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
+              height={400}
+              className="w-full h-full object-contain"
             />
           </div>
-          <div className="overflow-hidden h-[450px]">
+
+          <div className="reveal overflow-hidden h-[380px]">
             <Image
-              src="/Web-Images/home/lookbook/lookbook-8.png"
-              alt="Norpak handmade range"
-              width={400}
-              height={450}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
-            />
-          </div>
-          <div className="overflow-hidden h-[450px]">
-            <Image
-              src="/Web-Images/home/lookbook/lookbook-6.png"
-              alt="LAMS school students"
-              width={400}
-              height={450}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
-            />
-          </div>
-          <div className="overflow-hidden h-[450px]">
-            <Image
-              src="/Web-Images/home/lookbook/lookbook-7.png"
-              alt="LAMS school teachers"
-              width={400}
-              height={450}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <div className="overflow-hidden h-[580px]">
-            <Image
-              src="/Web-Images/home/lookbook/lookbook-5.png"
+              src="/Web-Images/home/lookbook/lokbook-3.png"
               alt="Norpak factory view"
               width={400}
-              height={580}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
+              height={400}
+              className="w-full h-full object-contain"
             />
           </div>
-          <div className="overflow-hidden h-[550px]">
+
+          <div className="reveal delay-1 overflow-hidden h-[240px]">
             <Image
-              src="/Web-Images/home/lookbook/lookbook-9.png"
+              src="/Web-Images/home/lookbook/lokbook-4.png"
+              alt="Norpak staff member"
+              width={400}
+              height={400}
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          <div className="reveal delay-1 overflow-hidden h-[240px]">
+            <Image
+              src="/Web-Images/home/lookbook/lokbook-5.png"
+              alt="Norpak handmade range"
+              width={400}
+              height={400}
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          <div className="reveal delay-1 overflow-hidden h-[240px]">
+            <Image
+              src="/Web-Images/home/lookbook/lokbook-6.png"
               alt="Eco friendly packaging"
               width={400}
-              height={550}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
+              height={400}
+              className="w-full h-full object-contain"
             />
           </div>
-          <div className="overflow-hidden h-[595px]">
+
+          <div className="reveal delay-2 overflow-hidden h-[380px]">
             <Image
-              src="/Web-Images/home/lookbook/lookbook-10.png"
+              src="/Web-Images/home/lookbook/lokbook-7.png"
+              alt="Sustainable materials"
+              width={400}
+              height={400}
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          <div className="reveal delay-2 overflow-hidden h-[380px]">
+            <Image
+              src="/Web-Images/home/lookbook/lokbook-8.png"
+              alt="LAMS school teachers"
+              width={400}
+              height={400}
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          <div className="reveal delay-3 overflow-hidden h-[380px]">
+            <Image
+              src="/Web-Images/home/lookbook/lokbook-9.png"
               alt="Norpak complete product range"
               width={400}
-              height={600}
-              className="w-full h-full object-cover rounded-[36px] border border-[#2D3845]"
+              height={400}
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

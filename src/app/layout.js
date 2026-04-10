@@ -1,11 +1,13 @@
-import { Montserrat } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/navbar/Navbar";
 import Footer from "@/footer/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
-const montserrat = Montserrat({
+const roboto = Roboto({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto",
 });
 
 export const metadata = {
@@ -15,9 +17,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
+    <html lang="en" className={`${roboto.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Navbar />
+        <ScrollReveal />
         {children}
         <Footer />
       </body>

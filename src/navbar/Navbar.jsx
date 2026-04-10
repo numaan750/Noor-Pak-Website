@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Home", link: "/" },
+  // { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Products", link: "/products" },
   { name: "Sustainability", link: "/sustainability" },
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <Link
                   key={item.link}
                   href={item.link}
-                  className={`text-[18px] pb-0 transition-colors relative group ${
+                  className={`font-garnett text-[18px] pb-0 transition-colors relative group cursor-pointer ${
                     pathname === item.link
                       ? "text-[#FFFFFF]"
                       : "hover:text-[#FFFFFF]"
@@ -90,7 +90,7 @@ const Navbar = () => {
                 key={item.link}
                 href={item.link}
                 onClick={() => setIsOpen(false)}
-                className={`text-[20px] relative group ${
+                className={`font-garnett text-[20px] relative group ${
                   pathname === item.link
                     ? "text-[#FFFFFF]"
                     : "hover:text-[#FFFFFF]"
