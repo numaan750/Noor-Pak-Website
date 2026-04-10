@@ -49,7 +49,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className="reveal delay-2 w-full md:w-1/2 flex-shrink-0">
-            <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden">
+            <div className="relative w-full h-[300px] sm:h-[400px] md:h-[370px] overflow-hidden">
               <Image
                 src="/Web-Images/home/Inspired-by-Scandinavian-design-traditional-pak.png"
                 alt="Inspired-by-Scandinavian-design-traditional-pak"

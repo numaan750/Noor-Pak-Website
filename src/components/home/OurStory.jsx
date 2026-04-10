@@ -20,7 +20,7 @@ const OurStory = () => {
   return (
     <section className="bg-[#EBEBEB] pt-10 sm:pt-12 md:pt-16 lg:pt-25">
       <div className="Mycontainer text-center">
-        <div className="reveal w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12 mb-6 sm:mb-8 md:mb-10 lg:mb-25">
+        <div className="reveal w-full  mb-6 sm:mb-8 md:mb-10 lg:mb-25">
           <Image
             src="/Web-Images/home/our-story.png"
             alt="our-story"
