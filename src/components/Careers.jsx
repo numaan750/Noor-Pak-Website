@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Careers = () => {
@@ -60,7 +61,7 @@ const Careers = () => {
         </p>
         <p className="reveal delay-11 font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5 text-center">
           For any specific questions about these vacancies, please write to
-         <span className="text-blue-500"> careers@norpak.pk</span>
+          <span className="text-blue-500"> careers@norpak.pk</span>
         </p>
         <p className="reveal delay-12font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5 text-center">
           Note that applications without a supporting letter of motivation may
@@ -78,9 +79,11 @@ const Careers = () => {
         </p>
 
         <div className="reveal delay-16 flex justify-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
-          <button className="font-roboto font-medium bg-[#000000] hover:bg-gray-700 text-white tracking-wide uppercase leading-[13px] text-[10px] md:text-[13px] px-6 py-2.5 transition-colors duration-200 cursor-pointer">
-            Apply Now
-          </button>
+          <Link href="/#contact">
+            <button className="font-roboto font-medium bg-[#000000] hover:bg-gray-700 text-white tracking-wide uppercase leading-[13px] text-[10px] md:text-[13px] px-6 py-2.5 transition-colors duration-200 cursor-pointer">
+              Apply Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>
