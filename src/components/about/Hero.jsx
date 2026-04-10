@@ -147,7 +147,7 @@ const Hero = () => {
             {" "}
             <div className="reveal relative w-full aspect-[4/3] overflow-hidden">
               <Image
-                src="/Web-Images/about/engaged.png"
+                src="/Web-Images/about/Engaged.png"
                 alt="Engaged"
                 fill
                 className="object-cover"
