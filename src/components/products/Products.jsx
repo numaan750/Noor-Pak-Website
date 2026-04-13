@@ -4,15 +4,15 @@ import React from "react";
 const Products = () => {
   const images = [
     {
-      src: "/Web-Images/product/product-4.png",
+      src: "/Web-Images/product/product-4.webp",
       alt: "Artisan hands weaving",
     },
     {
-      src: "/Web-Images/product/product-5.png",
+      src: "/Web-Images/product/product-5.jpg",
       alt: "Textile bag",
     },
     {
-      src: "/Web-Images/home/our-story-4.png",
+      src: "/Web-Images/product/product-6.jpg",
       alt: "Home textile",
     },
   ];
@@ -94,7 +94,7 @@ const Products = () => {
           </div>
           <div className="w-full order-1 sm:order-2">
             <Image
-              src="/Web-Images/product/products-2.png"
+              src="/Web-Images/product/products-2.jpg"
               alt="products-2"
               width={400}
               height={300}
@@ -182,9 +182,9 @@ const Products = () => {
               </p>
             </div>
             <div className="w-full md:w-1/2 flex-shrink-0">
-              <div className="reveal delay-23 relative w-full aspect-[3/4] overflow-hidden">
+              <div className="reveal delay-23 relative w-full aspect-[2/3] overflow-hidden">
                 <Image
-                  src="/Web-Images/product/Scandinavian-design.png"
+                  src="/Web-Images/product/Scandinavian-design.jpg"
                   alt="Human"
                   fill
                   className="object-contain"

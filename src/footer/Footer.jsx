@@ -97,7 +97,11 @@ export default function Footer() {
                 Social
               </h4>
               <div className="flex gap-12 mb-8 flex-wrap">
-                <a href="#" className="hover:opacity-70 transition-opacity">
+                <a
+                  href="https://www.linkedin.com/company/norpakint/"
+                  target="_blank"
+                  className="hover:opacity-70 transition-opacity"
+                >
                   <Image
                     src="/Web-Images/linkedin.svg"
                     alt="LinkedIn"
@@ -106,10 +110,18 @@ export default function Footer() {
                     className="cursor-pointer"
                   />
                 </a>
-                <a href="#" className="hover:opacity-70 transition-opacity">
+                <a
+                  href="https://www.facebook.com/norpakint"
+                  target="_blank"
+                  className="hover:opacity-70 transition-opacity"
+                >
                   <FaFacebookF className="h-8 w-8" />
                 </a>
-                <a href="#" className="hover:opacity-70 transition-opacity">
+                <a
+                  href="https://www.instagram.com/norpakint/"
+                  target="_blank"
+                  className="hover:opacity-70 transition-opacity"
+                >
                   <Image
                     src="/Web-Images/insta.svg"
                     alt="Instagram"
@@ -118,34 +130,7 @@ export default function Footer() {
                     className="cursor-pointer"
                   />
                 </a>
-                {/* <a href="#" className="hover:opacity-70 transition-opacity">
-                <Image
-                  src="/Web-Images/youtube.svg"
-                  alt="YouTube"
-                  width={22}
-                  height={22}
-                  className="cursor-pointer"
-                />
-              </a> */}
               </div>
-
-              {/* <h4 className="text-[14px] md:text-[15px] font-semibold mb-3">
-              News letter
-            </h4>
-            <div className="flex items-center border-b border-[#FFFFFF33] pb-2">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="bg-transparent border-none outline-none text-gray-400 text-[13px] flex-1 placeholder-gray-500 min-w-0"
-              />
-              <Image
-                src="/Web-Images/mail.svg"
-                alt=""
-                width={16}
-                height={16}
-                className="cursor-pointer shrink-0 ml-2"
-              />
-            </div> */}
             </div>
           </div>
           <div className="border-t border-[#FFFFFF33] py-5 text-center">

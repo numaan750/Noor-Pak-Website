@@ -70,7 +70,7 @@ const OurStory = () => {
           <div className="w-full md:w-1/2 flex-shrink-0">
             <div className="reveal relative w-full aspect-[4/3] overflow-hidden">
               <Image
-                src="/Web-Images/about/our-story1.png"
+                src="/Web-Images/about/our-story1.jpg"
                 alt="our-story-1"
                 fill
                 className="object-cover"

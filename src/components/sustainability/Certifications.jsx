@@ -81,7 +81,7 @@ const Certifications = () => {
           </div>
           <div className="w-full order-1 sm:order-2">
             <Image
-              src="/Web-Images/sustainability/Sustainability-2.png"
+              src="/Web-Images/sustainability/Sustainability-2.jpeg"
               alt="products-2"
               width={400}
               height={300}

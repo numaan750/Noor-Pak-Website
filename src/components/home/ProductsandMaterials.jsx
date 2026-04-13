@@ -94,7 +94,7 @@ const ProductsandMaterials = () => {
             </div>
             <div className="w-full order-1 sm:order-2">
               <Image
-                src="/Web-Images/home/Responsible-Sustainabletracking-wide-2.png"
+                src="/Web-Images/home/Responsible-Sustainabletracking-wide-2.jpg"
                 alt="Responsible-Sustainabletracking-wide-2"
                 width={400}
                 height={300}

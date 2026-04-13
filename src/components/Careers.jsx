@@ -44,7 +44,13 @@ const Careers = () => {
 
         <p className="reveal delay-7 font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-center">
           Explore the below vacancies or drop us a line at
-          <span className="font-bold"> careers@norpak.pk </span>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
+            target="_blank"
+            className="font-bold hover:underline"
+          >
+            careers@norpak.pk
+          </a>
         </p>
       </div>
 
@@ -60,8 +66,14 @@ const Careers = () => {
           apply.
         </p>
         <p className="reveal delay-11 font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5 text-center">
-          For any specific questions about these vacancies, please write to
-          <span className="text-blue-500"> careers@norpak.pk</span>
+          For any specific questions about these vacancies, please write to{" "}
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
+            careers@norpak.pk
+          </a>
         </p>
         <p className="reveal delay-12font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5 text-center">
           Note that applications without a supporting letter of motivation may
@@ -71,6 +83,9 @@ const Careers = () => {
         <p className="reveal delay-13 font-roboto font-bold text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-[#AE0000] text-center mb-5">
           Sales & Marketing Manager
         </p>
+        {/* <p className="reveal delay-14 font-roboto font-bold text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-[#AE0000] text-center mb-5">
+          Human Resources Officer
+        </p> */}
         <p className="reveal delay-15 font-roboto font-bold text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-[#AE0000] text-center">
           Communications Officer (Corporate & Marketing)
         </p>

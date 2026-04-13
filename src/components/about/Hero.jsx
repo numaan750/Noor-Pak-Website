@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="bg-[#EBEBEB]">
       <div className="w-full h-[300px] sm:h-screen md:h-screen lg:h-screen relative">
         <Image
-          src="/Web-Images/about/about-hero-imag.png"
+          src="/Web-Images/about/about-hero-imag.jpg"
           alt="Artisan weaving textiles"
           fill
           className="object-cover object-center"
@@ -103,10 +103,10 @@ const Hero = () => {
             <div className="reveal relative w-full aspect-square overflow-hidden">
               {" "}
               <Image
-                src="/Web-Images/about/Human.png"
+                src="/Web-Images/about/Human.jpg"
                 alt="Human"
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           </div>
@@ -147,7 +147,7 @@ const Hero = () => {
             {" "}
             <div className="reveal relative w-full aspect-[4/3] overflow-hidden">
               <Image
-                src="/Web-Images/about/Engaged.png"
+                src="/Web-Images/about/Engaged.jpg"
                 alt="Engaged"
                 fill
                 className="object-cover"

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { toast, Toaster } from "react-hot-toast";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,13 +10,43 @@ const ContactForm = () => {
     company: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleSubmit = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+      } else {
+        toast.error("Something went wrong. Try again.");
+      }
+    } catch {
+      toast.error("Something went wrong. Try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="reveal bg-[#EBEBEB]">
+      <Toaster position="top-right" />
       <div id="contact" className="Mycontainer grid md:grid-cols-2 bg-black">
         <div className="order-2 md:order-1 px-5 sm:px-5 md:px-10 lg:px-10 py-10 md:pt-10 lg:pt-10 flex flex-col gap-4">
           <input
@@ -59,10 +90,12 @@ const ContactForm = () => {
             className="w-full bg-[#FFFFFF1A] text-white placeholder-[#FFFFFFB2] rounded-xl px-5 py-4 text-[14px] md:text-[16px] outline-none focus:ring-2 focus:ring-[#2D3845] transition-all resize-none"
           />
           <button
-            type="submit"
-            className="font-roboto font-semibold bg-[#EBEBEB] text-[#0c0a0b] tracking-wide uppercase leading-[20px] text-[14px] md:text-[16px] px-6 py-4 rounded-lg transition-colors duration-200 cursor-pointer"
+            type="button"
+            onClick={handleSubmit}
+            disabled={loading}
+            className="font-roboto font-semibold bg-[#EBEBEB] text-[#0c0a0b] tracking-wide uppercase leading-[20px] text-[14px] md:text-[16px] px-6 py-4 rounded-lg transition-colors duration-200 cursor-pointer disabled:opacity-60"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
         <div className="order-1 md:order-2 pl-5 sm-pl-0 pt-10 pr-5  flex flex-col justify-center pr-0 md:pr-10">

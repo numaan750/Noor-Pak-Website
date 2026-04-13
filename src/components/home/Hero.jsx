@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="reveal delay-2 w-full md:w-1/2 flex-shrink-0">
             <div className="relative relative w-full aspect-[4/3] overflow-hidden">
               <Image
-                src="/Web-Images/home/Inspired-by-Scandinavian-design-traditional-pak.png"
+                src="/Web-Images/home/Inspired-by-Scandinavian-design-traditional-pak.jpg"
                 alt="Inspired-by-Scandinavian-design-traditional-pak"
                 fill
                 className="object-contain"
