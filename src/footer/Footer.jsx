@@ -72,7 +72,8 @@ export default function Footer() {
                     className="cursor-pointer shrink-0"
                   />
                   <a
-                    href="mailto:info@norpak.pk"
+                    href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
+                    target="_blank"
                     className=" font-roboto font-semibold text-[14px] md:text-[16px] text-white hover:text-gray-300 transition-colors break-all"
                   >
                     info@norpak.pk

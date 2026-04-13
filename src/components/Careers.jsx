@@ -43,7 +43,7 @@ const Careers = () => {
         </p>
 
         <p className="reveal delay-7 font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-center">
-          Explore the below vacancies or drop us a line at
+          Explore the below vacancies or drop us a line at{" "}
           <a
             href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
             target="_blank"
