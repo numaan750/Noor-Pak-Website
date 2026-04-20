@@ -51,7 +51,8 @@ const Goals = () => {
               <p className="reveal delay-6 font-garnett text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5">
                 Read more about LAMS at
                 <a
-                  href="www.lams.no/en/"
+                  href="https://www.lams.no/en/"
+                  target="_blank"
                   className="text-blue-500 hover:text-blue-600"
                 >
                   {" "}
@@ -112,7 +113,8 @@ const Goals = () => {
               <p className="reveal delay-11 font-garnett text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5">
                 Read more about LAMS at
                 <a
-                  href="www.lams.no/en/"
+                  href="https://www.lams.no/en/"
+                  target="_blank"
                   className="text-blue-500 hover:text-blue-600"
                 >
                   {" "}
