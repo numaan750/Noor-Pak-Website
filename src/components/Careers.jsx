@@ -68,7 +68,6 @@ const Careers = () => {
           For any specific questions about these vacancies, please write to{" "}
           <a
             href="mailto:careers@norpak.pk"
-            target="_blank"
             className="text-blue-500 hover:underline"
           >
             careers@norpak.pk
