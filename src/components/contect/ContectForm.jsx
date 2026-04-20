@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { toast, Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,24 +20,20 @@ const ContactForm = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (data.success) {
-        toast.success("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          company: "",
-          message: "",
-        });
-      } else {
-        toast.error("Something went wrong. Try again.");
-      }
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      );
+      toast.success("Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
     } catch {
       toast.error("Something went wrong. Try again.");
     } finally {
@@ -116,9 +113,12 @@ const ContactForm = () => {
             </p>
             <p className="font-garnett text-white text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5 break-all">
               Drop us a line at{" "}
-              <span className=" font-garnett text-white text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px]">
+              <a
+                href="mailto:info@norpak.pk"
+                className=" font-garnett text-white text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px]"
+              >
                 info@norpak.pk
-              </span>{" "}
+              </a>{" "}
               or by completing the below form:
             </p>
           </div>

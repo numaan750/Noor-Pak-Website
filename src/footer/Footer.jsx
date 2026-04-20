@@ -72,8 +72,7 @@ export default function Footer() {
                     className="cursor-pointer shrink-0"
                   />
                   <a
-                    href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
-                    target="_blank"
+                    href="mailto:info@norpak.pk"
                     className=" font-roboto font-semibold text-[14px] md:text-[16px] text-white hover:text-gray-300 transition-colors break-all"
                   >
                     info@norpak.pk
@@ -87,9 +86,12 @@ export default function Footer() {
                     height={14}
                     className="cursor-pointer shrink-0"
                   />
-                  <span className="font-roboto font-semibold text-[14px] md:text-[16px] text-white">
+                  <a
+                    href="tel:+92412691635"
+                    className="font-roboto font-semibold text-[14px] md:text-[16px] text-white"
+                  >
                     +92 (0) 41 269 1635
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>

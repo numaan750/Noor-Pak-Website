@@ -45,7 +45,7 @@ const Careers = () => {
         <p className="reveal delay-7 font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] text-center">
           Explore the below vacancies or drop us a line at{" "}
           <a
-            href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
+            href="mailto:careers@norpak.pk"
             target="_blank"
             className="font-bold hover:underline"
           >
@@ -68,7 +68,7 @@ const Careers = () => {
         <p className="reveal delay-11 font-roboto text-[#636363] text-[14px] md:text-[16px] tracking-[-0.5px] leading-[24px] mb-5 text-center">
           For any specific questions about these vacancies, please write to{" "}
           <a
-            href="https://mail.google.com/mail/?view=cm&to=careers@norpak.pk"
+            href="mailto:careers@norpak.pk"
             target="_blank"
             className="text-blue-500 hover:underline"
           >
@@ -91,7 +91,7 @@ const Careers = () => {
         </p>
 
         <div className="reveal delay-16 flex justify-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
-          <Link href="/#contact">
+          <Link href="mailto:careers@norpak.pk">
             <button className="font-roboto font-medium bg-[#000000] hover:bg-gray-700 text-white tracking-wide uppercase leading-[13px] text-[10px] md:text-[13px] px-6 py-2.5 transition-colors duration-200 cursor-pointer">
               Apply Now
             </button>
